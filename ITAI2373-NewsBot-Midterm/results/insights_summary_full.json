@@ -1,0 +1,147 @@
+{
+  "dataset_overview": {
+    "run": "full",
+    "total_articles": 1432,
+    "categories": [
+      "Business",
+      "Entertainment",
+      "Politics",
+      "Sport",
+      "Tech"
+    ],
+    "category_distribution": {
+      "Sport": 342,
+      "Business": 335,
+      "Politics": 266,
+      "Entertainment": 261,
+      "Tech": 228
+    },
+    "avg_article_length": 2220.780027932961,
+    "avg_words_per_article": 380.0195530726257
+  },
+  "classification_performance": {
+    "best_model": "Linear SVM (tuned)",
+    "feature_set": "TF-IDF + sentiment + length",
+    "best_accuracy": 0.9616724738675958,
+    "test_macro_f1": 0.958152522513642,
+    "cv_macro_f1": 0.9801114544819922,
+    "n_test_articles": 287,
+    "model_comparison": {
+      "Naive Bayes": 0.9477351916376306,
+      "Logistic Regression": 0.9477351916376306,
+      "Linear SVM": 0.9686411149825784,
+      "SVM (RBF)": 0.9547038327526133,
+      "Random Forest": 0.9407665505226481,
+      "Linear SVM (tuned)": 0.9616724738675958
+    }
+  },
+  "sentiment_insights": {
+    "measure": "avg_sentence_sentiment",
+    "most_positive_category": "Entertainment",
+    "most_negative_category": "Politics",
+    "sentiment_by_category": {
+      "Business": 0.05438164498919107,
+      "Entertainment": 0.19244288992446587,
+      "Politics": 0.018557140613589734,
+      "Sport": 0.14294218916231635,
+      "Tech": 0.09451143320149663
+    },
+    "overall_sentiment": 0.10043050293877995,
+    "whole_article_saturation_share": 0.7039106145251397
+  },
+  "emotion_insights": {
+    "backend": "nrclex",
+    "strongest_emotion_per_category": {
+      "Business": "trust",
+      "Entertainment": "trust",
+      "Politics": "trust",
+      "Sport": "trust",
+      "Tech": "trust"
+    },
+    "second_emotion_per_category": {
+      "Business": "anticipation",
+      "Entertainment": "anticipation",
+      "Politics": "anticipation",
+      "Sport": "anticipation",
+      "Tech": "anticipation"
+    },
+    "category_with_most_of_each_emotion": {
+      "anger": "Politics",
+      "anticipation": "Entertainment",
+      "disgust": "Politics",
+      "fear": "Politics",
+      "joy": "Entertainment",
+      "sadness": "Politics",
+      "surprise": "Entertainment",
+      "trust": "Politics"
+    }
+  },
+  "entity_insights": {
+    "total_entities": 26785,
+    "unique_entities": 8559,
+    "entity_types": [
+      "PERSON",
+      "GPE",
+      "DATE",
+      "MONEY",
+      "ORG"
+    ],
+    "entities_per_category": {
+      "Business": 7049,
+      "Entertainment": 5004,
+      "Politics": 4790,
+      "Sport": 6443,
+      "Tech": 3499
+    },
+    "most_mentioned_entities": {
+      "uk": 555,
+      "us": 546,
+      "britain": 283,
+      "london": 274,
+      "2004": 250
+    },
+    "bridge_entities_in_all_categories": [
+      "america",
+      "australia",
+      "bbc",
+      "birmingham",
+      "britain",
+      "canada",
+      "china",
+      "david",
+      "england",
+      "france",
+      "germany",
+      "hong kong",
+      "india",
+      "ireland",
+      "italy",
+      "japan",
+      "london",
+      "mexico",
+      "michael",
+      "netherlands",
+      "new york",
+      "paul",
+      "russia",
+      "south africa",
+      "spain",
+      "taylor",
+      "tony blair",
+      "uk",
+      "united states",
+      "us"
+    ]
+  },
+  "linguistic_patterns": {
+    "highest_noun_verb_ratio": "Entertainment",
+    "most_numbers": "Business",
+    "fewest_numbers": "Politics",
+    "longest_sentences": "Politics",
+    "shortest_sentences": "Sport",
+    "deepest_parse_trees": "Politics",
+    "most_passive_voice": "Politics",
+    "syntax_style_only_accuracy": 0.5600716356813917
+  },
+  "business_recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "model": "Linear SVM (tuned)",
+  "base_model": "Linear SVM",
+  "feature_set": "TF-IDF + sentiment + length",
+  "uses_tfidf": true,
+  "numeric_features": [
+    "full_sentiment",
+    "avg_sentence_sentiment",
+    "pos_score",
+    "neu_score",
+    "neg_score",
+    "share_pos_sentences",
+    "share_neg_sentences",
+    "char_count",
+    "word_count",
+    "n_sentences"
+  ],
+  "best_params": {
+    "clf__C": "1",
+    "features__tfidf__ngram_range": "(1, 2)"
+  },
+  "selectkbest_k": "all",
+  "class_weight": "balanced",
+  "calibrated": true,
+  "cv_macro_f1_tuned": 0.9801,
+  "test_accuracy": 0.9617,
+  "test_macro_f1": 0.9582,
+  "n_train": 1145,
+  "n_test": 287,
+  "run": "full",
+  "random_state": 42,
+  "sklearn_version": "1.6.1",
+  "saved_at": "2026-10-19 21:48"
+}
